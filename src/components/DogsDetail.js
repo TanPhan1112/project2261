@@ -6,9 +6,9 @@ import Footer from "./Footer";
 
 function DogsDetail(props) {
     const [random, setRandom] = useState('');
+    const dog = props.location.state.dog;
 
     useEffect(() => {
-        const dog = props.location.state.dog;
         axios.get(`https://dog.ceo/api/breed/${dog}/images/random/18`)
             .then(result => {
                 const breed = result.data.message;
@@ -116,6 +116,7 @@ function DogsDetail(props) {
         <div>
             <Header />
             <div className="container">
+                <h2>{dog}</h2>
                 <Gallery photos={PHOTO_SET} />
             </div>
             <Footer />
