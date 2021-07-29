@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import Gallery from 'react-photo-gallery';
+import Header from "./Header";
 import Footer from "./Footer";
 
 function Home() {
@@ -141,35 +142,13 @@ function Home() {
     ];
 
     return (
-        <body>
-            <nav className="navbar navbar-inverse navbar-fixed-top">
-                <div className="container-fluid">
-                    <div className="navbar-header">
-                        <a className="navbar-brand" href="/">Dog Library</a>
-                    </div>
-                    <ul className="nav navbar-nav">
-                        <li className="active"><a href="/Home">Home</a></li>
-                        <li><a href="/dogs">Our dogs</a></li>
-                        <li><a href="#">To-do</a></li>
-                        <li><a href="#">Documentation</a></li>
-                    </ul>
-                    <form className="navbar-form navbar-left" action="/action_page.php">
-                        <div className="input-group">
-                            <input type="text" className="form-control" placeholder="Search" name="search" />
-                            <div className="input-group-btn">
-                                <button className="btn btn-default" type="submit">
-                                    <i className="glyphicon glyphicon-search"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </nav>
+        <div>
+            <Header />
             <div className="container">
                 <Gallery photos={PHOTO_SET} />
             </div>
             <Footer />
-        </body>
+        </div>
     );
 }
 

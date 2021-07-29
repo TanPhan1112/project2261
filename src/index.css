@@ -5,12 +5,28 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100%;
 }
 
 .container {
   padding-top: 55px;
   width: 80%;
+}
+
+.searchbar[type="text"] {
+  position: fixed;
+  width: 20%;
+  right: 8px;
+  top: 8px;
+  z-index: 10000;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  padding: 6px 10px 6px 35px;
+  background-color: white;
+  /* https://pixabay.com/vectors/magnifying-glass-search-search-bar-1976105/ */
+  background-image: url("./images/search.png");
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
 }
 
 footer {
