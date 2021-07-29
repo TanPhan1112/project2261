@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import axios from 'axios';
+import Footer from "./Footer";
 
 function Dogs() {
     const [dogs, setDogs] = useState([]);
@@ -17,9 +19,9 @@ function Dogs() {
 
     const dogList = dogs
         .map((dog) => (
-            <button type="button" className="list-group-item list-group-item-action">
+            <Link type="button" to={{ pathname: '/dogsdetail', state: { dog } }} className="list-group-item list-group-item-action" value={dog}>
                 {dog}
-            </button>
+            </Link>
         ));
 
     return (
@@ -30,10 +32,10 @@ function Dogs() {
                         <a className="navbar-brand" href="/">Dog Library</a>
                     </div>
                     <ul className="nav navbar-nav">
-                        <li className="active"><a href="/Home">Home</a></li>
-                        <li><a href="/dogs">Our dogs</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="/Home">Home</a></li>
+                        <li className="active"><a href="/dogs">Our dogs</a></li>
                         <li><a href="#">To-do</a></li>
+                        <li><a href="#">Documentation</a></li>
                     </ul>
                     <form className="navbar-form navbar-left" action="/action_page.php">
                         <div className="input-group">
@@ -52,6 +54,7 @@ function Dogs() {
                     {dogList}
                 </div>
             </div>
+            <Footer />
         </body>
     );
 }

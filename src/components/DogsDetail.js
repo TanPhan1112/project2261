@@ -3,11 +3,12 @@ import axios from 'axios';
 import Gallery from 'react-photo-gallery';
 import Footer from "./Footer";
 
-function Home() {
+function DogsDetail(props) {
     const [random, setRandom] = useState('');
 
     useEffect(() => {
-        axios.get(`https://dog.ceo/api/breeds/image/random/24`)
+        const dog = props.location.state.dog;
+        axios.get(`https://dog.ceo/api/breed/${dog}/images/random/18`)
             .then(result => {
                 const breed = result.data.message;
                 setRandom(breed);
@@ -80,61 +81,31 @@ function Home() {
         },
         {
             src: random[12],
-            width: 8,
-            height: 8
+            width: 6,
+            height: 5
         },
         {
             src: random[13],
             width: 5,
-            height: 5
+            height: 6
         },
         {
             src: random[14],
-            width: 7,
-            height: 6
-        },
-        {
-            src: random[15],
-            width: 4,
-            height: 3
-        },
-        {
-            src: random[16],
-            width: 4,
-            height: 4
-        },
-        {
-            src: random[17],
-            width: 5,
-            height: 4
-        },
-        {
-            src: random[18],
-            width: 6,
-            height: 5
-        },
-        {
-            src: random[19],
-            width: 5,
-            height: 6
-        },
-        {
-            src: random[20],
             width: 3,
             height: 3
         },
         {
-            src: random[21],
+            src: random[15],
             width: 7,
             height: 7
         },
         {
-            src: random[22],
+            src: random[16],
             width: 6,
             height: 6
         },
         {
-            src: random[23],
+            src: random[17],
             width: 4,
             height: 5
         }
@@ -148,8 +119,8 @@ function Home() {
                         <a className="navbar-brand" href="/">Dog Library</a>
                     </div>
                     <ul className="nav navbar-nav">
-                        <li className="active"><a href="/Home">Home</a></li>
-                        <li><a href="/dogs">Our dogs</a></li>
+                        <li><a href="/Home">Home</a></li>
+                        <li className="active"><a href="/dogs">Our dogs</a></li>
                         <li><a href="#">To-do</a></li>
                         <li><a href="#">Documentation</a></li>
                     </ul>
@@ -173,4 +144,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default DogsDetail;
