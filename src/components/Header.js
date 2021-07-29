@@ -12,7 +12,7 @@ function Header() {
                         <li><a href="/Home">Home</a></li>
                         <li><a href="/dogs">Our dogs</a></li>
                         <li><a href="/">To-do</a></li>
-                        <li><a href="/">Documentation</a></li>
+                        <li><a href="/documentation">Documentation</a></li>
                     </ul>
                 </div>
             </nav>
