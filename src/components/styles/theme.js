@@ -1,4 +1,4 @@
-export default {
+const theme = {
     lightTheme: {
         colors: {
             background: 'radial-gradient(lightGrey, black)',
@@ -21,4 +21,6 @@ export default {
         },
         transition: '0.3s',
     },
-}
+};
+
+export default theme;

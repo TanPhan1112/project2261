@@ -20,7 +20,7 @@ function Header() {
                     <a href="/dogs">Our dogs</a>
                     <a href="/todo">To-do</a>
                     <a href="/documentation">Documentation</a>
-                    <a href="javascript:void(0);" className="icon" onClick={myFunction}>
+                    <a href="#/" className="icon" onClick={myFunction}>
                         <i className="fa fa-bars"></i>
                     </a>
                 </div>

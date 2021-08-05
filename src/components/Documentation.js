@@ -16,7 +16,7 @@ function Documentation() {
                     <li>Consume a public API: axios</li>
                     <li>Global state: GlobalStyles. Redux or the Context API: A dark/light mode toggle</li>
                     <li>Client-side routing: /, /home, /dogs, /dogsdetail, /documentation</li>
-                    <li>Deploy: Netlify</li>
+                    <li>Deploy: Netlify and Heroku</li>
                 </ul>
                 <h3>References</h3>
                 <ul>
