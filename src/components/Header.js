@@ -15,7 +15,7 @@ function Header() {
         <div>
             <nav>
                 <div className="topnav" id="myTopnav">
-                    <a className="navbar-brand" href="/">Dog Library</a>
+                    <a href="/">Dog Library</a>
                     <a href="/Home">Home</a>
                     <a href="/dogs">Our dogs</a>
                     <a href="/todo">To-do</a>

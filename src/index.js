@@ -5,6 +5,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import AppProvider from "./components/AppProvider";
+import './helpers/i18n';
 
 ReactDOM.render(
   <React.StrictMode>
