@@ -8,21 +8,27 @@ function Documentation() {
             <Header />
             <div className="container">
                 <h2>Welcome you to visit our website!</h2>
-                <p>This website shows the collection of dogs around the world. You can go to Our dogs to find pictures of your favourite dogs</p>
+                <p>This website shows the collection of dogs around the world. You can go to Our dogs to find pictures of your favourite dogs. Also, you can switch between light and dark themes of your favourite.</p>
                 <ul>
-                    <li>Componentize: Home, Header, Footer, Dogs, DogsDetail, Documentation</li>
+                    <li>Componentize: Home, Header, Footer, Dogs, DogsDetail, Documentation, To-do (still under development)</li>
                     <li>Filtering: Search bar on Our dogs page</li>
                     <li>localStorage: Save dogs API</li>
                     <li>Consume a public API: axios</li>
+                    <li>Global state: GlobalStyles. Redux or the Context API: A dark/light mode toggle</li>
                     <li>Client-side routing: /, /home, /dogs, /dogsdetail, /documentation</li>
                     <li>Deploy: Netlify</li>
+                </ul>
+                <h3>References</h3>
+                <ul>
+                    <li><a href="https://pixabay.com/vectors/magnifying-glass-search-search-bar-1976105/">https://pixabay.com/vectors/magnifying-glass-search-search-bar-1976105/</a></li>
+                    <li><a href="https://pixabay.com/illustrations/feet-icon-button-silhouette-1459485/">https://pixabay.com/illustrations/feet-icon-button-silhouette-1459485/</a></li>
                 </ul>
                 <p>
                     Contact developer:
                     <br></br>
                     minhtan111293@gmail.com
                     <br></br>
-                    &#9742;; +6044413896
+                    &#9742; +6044413896
                 </p>
             </div>
             <Footer />

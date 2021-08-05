@@ -1,21 +1,31 @@
 import React from "react";
+import ThemeSwitcher from "./ThemeSwitcher";
+import './styles/nav.css';
 
 function Header() {
+    const myFunction = () => {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    };
     return (
         <div>
-            <nav className="navbar navbar-inverse navbar-fixed-top">
-                <div className="container-fluid">
-                    <div className="navbar-header">
-                        <a className="navbar-brand" href="/">Dog Library</a>
-                    </div>
-                    <ul className="nav navbar-nav">
-                        <li><a href="/Home">Home</a></li>
-                        <li><a href="/dogs">Our dogs</a></li>
-                        <li><a href="/">To-do</a></li>
-                        <li><a href="/documentation">Documentation</a></li>
-                    </ul>
+            <nav>
+                <div className="topnav" id="myTopnav">
+                    <a className="navbar-brand" href="/">Dog Library</a>
+                    <a href="/Home">Home</a>
+                    <a href="/dogs">Our dogs</a>
+                    <a href="/todo">To-do</a>
+                    <a href="/documentation">Documentation</a>
+                    <a href="javascript:void(0);" className="icon" onClick={myFunction}>
+                        <i className="fa fa-bars"></i>
+                    </a>
                 </div>
             </nav>
+            <ThemeSwitcher />
         </div>
     );
 }
