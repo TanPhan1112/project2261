@@ -71,7 +71,16 @@ code {
     monospace;
 }
 
+.language {
+  margin-top: 0.4%;
+  margin-left: 30%;
+}
+
 @media only screen and (max-width: 670px) {
+  .language {
+    margin-top: 2% !important;
+  }
+
   .searchbar[type="text"] {
     left: 50%;
     right: 50%;

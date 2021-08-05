@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 
 function Page() {
     const { t } = useTranslation();
+
     return (
         <div>
             <h1>{t('home.mainTitle')}</h1>
@@ -19,6 +20,7 @@ function Translate() {
     const handleChange = (lang) => {
         i18n.changeLanguage(lang);
     }
+
     return (
         <div>
             <button className="btn" onClick={e => { handleChange('en') }}>EN</button>
@@ -28,11 +30,13 @@ function Translate() {
 }
 
 function ToDo() {
+    const { t } = useTranslation();
+
     return (
         <div>
             <Header />
             <div className="container">
-                <h1>This translate function is still under development! Please check back later</h1>
+                <h1>{t('toDo.title')}</h1>
                 <Suspense fallback="Loading ..." >
                     <Translate />
                     <Page />

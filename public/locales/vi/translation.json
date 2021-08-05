@@ -3,5 +3,30 @@
         "mainTitle": "Ví dụ về react với i18n",
         "text": "Xin chào, tôi là một văn bản cần được dịch",
         "description": "Tôi là một đoạn văn"
+    },
+    "nav": {
+        "homeTitle": "Thư viện cún",
+        "home": "Trang chủ",
+        "ourDogs": "Cún yêu",
+        "toDo": "Chức năng",
+        "documentation": "Tài liệu"
+    },
+    "body": {
+        "theme": "Thay đổi chủ đề"
+    },
+    "search": {
+        "searchBar": "Tìm kiếm"
+    },
+    "footer": {
+        "footerTitle": "Tham gia bản tin của chúng tôi",
+        "footerHeading": "Đăng ký để nhận tất cả các tin tức mới nhất!",
+        "email": "Địa chỉ email",
+        "signUp": "Đăng ký cho tôi!",
+        "reset": "Reset lại email",
+        "copyright": "Bản quyền",
+        "createdBy": "Được tạo bởi"
+    },
+    "toDo": {
+        "title": "Chức năng dịch này vẫn đang được phát triển! Vui lòng kiểm tra lại sau"
     }
 }

@@ -3,15 +3,19 @@ import styled from "styled-components";
 import { AppContext } from "./AppProvider";
 import Switch from "react-switch";
 import { IoMdSunny, IoMdMoon } from "react-icons/all";
+import { useTranslation } from 'react-i18next';
 
 const ThemeSwitcher = () => {
     const { toggleTheme, themeMode } = useContext(AppContext);
+    const { t } = useTranslation();
+
     const handleThemeChange = (e) => {
         toggleTheme();
     };
+
     return (
         <Root>
-            <h1>Toggle Theme</h1>
+            <h1>{t('body.theme')}</h1>
             <Switch
                 checked={themeMode === "lightTheme" ? true : false}
                 className="test"

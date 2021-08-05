@@ -3,5 +3,30 @@
         "mainTitle": "An Example of react with i18n",
         "text": "Hello I am a text to be translated",
         "description": "I am a paragraph"
+    },
+    "nav": {
+        "homeTitle": "Dog Library",
+        "home": "Home",
+        "ourDogs": "Our dogs",
+        "toDo": "To-do",
+        "documentation": "Documentation"
+    },
+    "body": {
+        "theme": "Toggle Theme"
+    },
+    "search": {
+        "searchBar": "Search"
+    },
+    "footer": {
+        "footerTitle": "Join Our Newsletter",
+        "footerHeading": "Sign up to all the latest news!",
+        "email": "Email address",
+        "signUp": "Sign Me Up!",
+        "reset": "Reset",
+        "copyright": "Copyright",
+        "createdBy": "Created by"
+    },
+    "toDo": {
+        "title": "This translate function is still under development! Please check back later"
     }
 }

@@ -3,10 +3,12 @@ import { Link } from "react-router-dom";
 import axios from 'axios';
 import Header from "./Header";
 import Footer from "./Footer";
+import { useTranslation } from 'react-i18next';
 
 function Dogs() {
     const [dogs, setDogs] = useState([]);
     const [q, setQ] = useState("");
+    const { t } = useTranslation();
 
     useEffect(() => {
         axios.get(`https://dog.ceo/api/breeds/list/all`)
@@ -37,7 +39,7 @@ function Dogs() {
             <div className="container">
                 <div className="input-group">
                     <form onSubmit={e => { e.preventDefault(); }}>
-                        <input type="text" className="searchbar" placeholder="Search" name="search" value={q} onChange={(e) => setQ(e.target.value)} />
+                        <input type="text" className="searchbar" placeholder={t('search.searchBar')} name="search" value={q} onChange={(e) => setQ(e.target.value)} />
                     </form>
                 </div>
                 <div className="list-group">
